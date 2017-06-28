@@ -5,7 +5,8 @@
   What for?: <%= f.text_field :name %><br>
   Location: <%= f.text_field :location %><br>
   Date: <%= f.date_field :date %><br>
-  <%= f.hidden_field :user_id, :value => current_user.id %><br>
+  <%= f.hidden_field :user_id, :value => current_user.id %>
+  <%= f.hidden_field :id, :value => @party.id %>
   <%= f.submit %>
 
 <% end %>

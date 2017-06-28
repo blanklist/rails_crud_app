@@ -20,6 +20,7 @@ class PartiesController < ApplicationController
   end
 
   def show
+    @party = Party.find(params[:id])
   end
 
   def update

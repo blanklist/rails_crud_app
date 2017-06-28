@@ -1,6 +1,6 @@
 <h3>Party Time: </h3>
 
-<% @parties.each do |party| %>
-<p><%= party.name %> at <%= party.location %>, nightfall on <%= party.date %> hosted by <%= party.user.username %>.</p>
+<% @parties.sort_by {|p| p.date}.each do |party| %>
+<p><%= link_to party.name, party_path(party) %> nightfall on <%= party.date %> hosted by <%= party.user.username %>.</p>
 
 <% end %>
