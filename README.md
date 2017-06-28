@@ -1,4 +1,4 @@
-# Part 3: Build a CRUD App
+# Build a CRUD App IN RAILS
 
 ## Summary
 
@@ -10,7 +10,7 @@ Part 3 is the final part of the Phase 2 assessment.  If Parts 1 and 2 are finish
 
 
 ### Web Application Overview
-You'll be building a site to organize [potluck dinners][].  Users will be able to host and attend dinners.  You'll build the site one feature at a time. The requirements for each feature are described in more detail in the *Releases* section. 
+You'll be building a site to organize [potluck dinners][].  Users will be able to host and attend dinners.  You'll build the site one feature at a time. The requirements for each feature are described in more detail in the *Releases* section.
 
 
 ## Releases
@@ -31,7 +31,7 @@ On the homepage, add a "register" link.  Clicking the link takes the user to a p
 
 If registration is unsuccessful, the user should see the registration form and the associated error messages.  If registration is successful, the user should be considered logged in and redirected to the homepage where the "register" link is replaced with the user's username.  This is demonstrated in Figure 1.
 
-![registration mockup](readme-assets/registration.gif)  
+![registration mockup](readme-assets/registration.gif)
 *Figure 1*. Registering unsuccessfully and then successfully.
 
 
@@ -42,7 +42,7 @@ If login is unsuccessful, the user should see the login form and an error messag
 
 Clicking the "logout" link logs the user out and redirects the user back to the homepage.  These behaviors are demonstrated in Figure 2.
 
-![login/logout animation](readme-assets/login-logout.gif)  
+![login/logout animation](readme-assets/login-logout.gif)
 *Figure 2*. Logging in unsuccessfully, logging in successfully, and logging out.
 
 
@@ -53,14 +53,14 @@ When the form is submitted, if adding the potluck is unsuccessful (e.g., failing
 
 *Note:*  The time a potluck starts should be saved in a datetime field. If you use a text input in your form, users should enter the date in the following format: YYYY-MM-DD HH:MM (e.g., 2017-05-22 12:00).
 
-![add potluck animation](readme-assets/add-potluck.gif)  
+![add potluck animation](readme-assets/add-potluck.gif)
 *Figure 3*.  Adding a potluck unsuccessfully and then successfully.
 
 
 ### Release 3:  Browsing Potlucks
 Add a feature that lists potlucks.  Potlucks should be listed on the homepage for any visitor to browse.  Only list potlucks that have not started.  Order the potlucks by starting time.  The potluck with the nearest starting time should be at the top of the list.  Each potluck's name, location, and start time should be displayed. The name should be a link. Clicking the link takes the user to a page showing the potluck's details. This is demonstrated in Figure 4.
 
-![browse potlucks animation](readme-assets/browse-potlucks.gif)  
+![browse potlucks animation](readme-assets/browse-potlucks.gif)
 *Figure 4*.  Browsing potlucks and viewing a specific potluck.
 
 
@@ -69,7 +69,7 @@ Allow users to edit potluck details. On the page showing a potluck, if a logged-
 
 If the update is unsuccessful, the user should see the form and the associated error messages. If updating the potluck is successful, the user should be redirected to a page showing the potluck's details. The successful outcome is demonstrated in Figure 5.
 
-![editing a potluck animation](readme-assets/edit-potluck.gif)  
+![editing a potluck animation](readme-assets/edit-potluck.gif)
 *Figure 5.*  Logging in and successfully editing a potluck.
 
 
@@ -80,7 +80,7 @@ On the page showing a potluck, add a "delete" button next to the "edit" link for
 
 *Note:* The "delete" button is part of a form used to submit a RESTful request to delete an item. In Figure 6, it is styled to look like a link.
 
-![delete potluck animation](readme-assets/delete-potluck.gif)  
+![delete potluck animation](readme-assets/delete-potluck.gif)
 *Figure 6*.  Logging in and deleting a potluck.
 
 
@@ -102,7 +102,7 @@ Update the page showing a potluck to display a list of the attendees and what fo
 
 When submitting the form, if the attendance is unsuccessfully created, the user should see the potluck page with the form and the associated error messages.  If the attendance is successfully created, the user should be redirected to the potluck's show page. Instead of seeing a form for signing up to attend, the user should be reminded what food they have committed to bring.  Signing up to attend a potluck is demonstrated in Figure 7.
 
-![attend a potluck animation](readme-assets/attend-potluck.gif)  
+![attend a potluck animation](readme-assets/attend-potluck.gif)
 *Figure 7*.  Logging in and signing up to attend a potluck.
 
 
