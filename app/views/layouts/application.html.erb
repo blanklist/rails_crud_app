@@ -9,6 +9,11 @@
   </head>
 
   <body>
+    <% if logged_in? %>
+      <div class="login right"><%= link_to 'Logout', '/logout' %>
+    <% else %>
+      <div class="login right"><%= link_to 'Login', '/login' %> &nbsp <%= link_to 'SignUp', new_user_path %> 
+    <% end %>
     <%= yield %>
   </body>
 </html>
