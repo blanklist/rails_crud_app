@@ -1,0 +1,6 @@
+<h3>Party Time: </h3>
+
+<% @parties.each do |party| %>
+<p><%= party.name %> at <%= party.location %>, nightfall on <%= party.date %> hosted by <%= party.user.username %>.</p>
+
+<% end %>
