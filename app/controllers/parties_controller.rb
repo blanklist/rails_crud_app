@@ -17,6 +17,7 @@ class PartiesController < ApplicationController
   end
 
   def edit
+    @party = Party.find(params[:id])
   end
 
   def show
@@ -24,9 +25,9 @@ class PartiesController < ApplicationController
   end
 
   def update
-  end
-
-  def update
+    @party = Party.find(params[:id])
+    @party.update(party_params)
+    redirect_to party_path
   end
 
   def destroy

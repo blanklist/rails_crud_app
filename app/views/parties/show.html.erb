@@ -2,3 +2,7 @@
 
 <p><%= @party.user.username %> is throwing a party. </p>
 <p>It will be held at <%= @party.location %> at exactly nightfall on the date of <%= @party.date %>.</p>
+
+<% if current_user.id == @party.user.id %>
+  <%= link_to 'Edit this party', edit_party_path(@party) %>
+<% end %>
