@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Potluck</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <% if logged_in? %>
+      <div><%= link_to 'Start a Party!', new_party_path %> | <%= link_to 'See Upcoming Parties!', parties_path %> | <%= link_to 'Logout', '/logout' %></div>
+    <% else %>
+      <div class="login right"><%= link_to 'Login', '/login' %> &nbsp <%= link_to 'SignUp', new_user_path %> 
+    <% end %>
+    <%= yield %>
+  </body>
+</html>
+

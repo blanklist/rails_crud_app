@@ -1,0 +1,8 @@
+<h3>Party Detail Page: </h3>
+
+<p><%= @party.user.username %> is throwing a party. </p>
+<p>It will be held at <%= @party.location %> at exactly nightfall on the date of <%= @party.date %>.</p>
+
+<% if current_user.id == @party.user.id %>
+  <%= link_to 'Edit this party', edit_party_path(@party) %> | <%= link_to 'Bouncy House didn\'t come through? Cancel this Party.', party_path(@party), :method => :delete %>
+<% end %>

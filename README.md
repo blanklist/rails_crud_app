@@ -112,3 +112,28 @@ Part-3 wraps up the assessment.  If you haven't already done so, commit your cha
 
 
 [potluck dinners]: https://en.wikipedia.org/wiki/Potluck
+
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
